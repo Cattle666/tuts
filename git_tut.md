@@ -1,4 +1,4 @@
-######Git Tut
+###### Git Tut  
 ssh-keygen.exe -t rsa -b 4096 -C miles@WorkStudyPC-2017-02-12  
 git add .  
 git status  
