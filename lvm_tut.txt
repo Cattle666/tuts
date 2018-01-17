@@ -1,0 +1,15 @@
+sudo pvcreate /dev/sdb1
+sudo vgcreate t610 /dev/sdb1
+sudo lvcreate -n solusvm -L 20G t610
+sudo mkfs -t ext4 /dev/t610/solusvm
+ls -al /dev/mapper
+ls -al /dev/t610/
+sudo lvresize -L+20G /dev/t610/ubuntu16.04vm
+sudo pvs
+sudo vgs
+sudo lvs
+sudo lvscan
+
+--delete--
+sudo umount /dev/t610/solusvm
+sudo lvremove /dev/t610/solusvm 

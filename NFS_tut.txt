@@ -1,0 +1,16 @@
+sudo apt install nfs-kernel-server
+sudo vim /etc/exports
+/path/to/directory     client-IP address(options)
+example:
+username	/home/username		192.168.1.101(rw,sync,root_squash,subtree_check)
+/home/username     192.168.1.0/24(rw,sync,root_squash,subtree_check)
+sudo exportfs -ra
+sudo apt install nfs-common
+sudo vim /etc/fstab
+nfs-server-ip:/home/username    /mnt/nfs-share      nfs       rw,soft,intr,noatime,x-gvfs-show
+sudo mkdir /mnt/nfs-share
+sudo mount -a
+or
+sudo mount sdx /mnt/nfs-share
+or
+sudo mount 192.168.122.231:/home/username /mnt/nfs-share -o rw,soft,intr,noatime,x-gvfs-show

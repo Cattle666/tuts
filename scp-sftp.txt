@@ -1,0 +1,2 @@
+-HOW TO RECUSIVELY TRANSFER FILES USING SCP (SFTP)-
+scp -r miles@192.168.0.99:/mnt/nfs-share ~/Documents
