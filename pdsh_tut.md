@@ -39,8 +39,9 @@ vim /etc/hosts
 ``` 
 sudo vim .bashrc  
 ```
-add this line to the end of the file  
+add this to the end of the file  
 ```
+#pdsh-rcmd fix
 export PDSH_RCMD_TYPE=ssh  
 ```
 or  
