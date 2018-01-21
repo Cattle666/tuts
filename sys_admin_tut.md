@@ -14,20 +14,20 @@ sudo vim /etc/bash.bashrc
 ip addr
 ifconfig --> depreciated  
 An easy way to see what processes own which network connections:  
-```
+```bash
 sudo netstat -tup  
 ```
 for connections and  
-```
+```bash
 sudo netstat -tupl  
 ```
 for listening process  
-```
+```bash
 sudo netstat -tulpen  
 ```
 ###### ifcfg  
 vim /etc/sysconfig/network-scripts/ifcfg-{adapter}
-```
+```vim
 TYPE=Ethernet  
 PROXY_METHOD=none  
 BROWSER_ONLY=no  
