@@ -11,6 +11,21 @@ dmsg | tail --> list last four, useful when plugging in USB drives
 ### admin/permissions  
 sudo vim /etc/bash.bashrc  
 ### network  
+ip addr
+ifconfig --> depreciated  
+An easy way to see what processes own which network connections:  
+```
+sudo netstat -tup  
+```
+for connections and  
+```
+sudo netstat -tupl  
+```
+for listening process  
+```
+sudo netstat -tulpen  
+```
+###### ifcfg  
 vim /etc/sysconfig/network-scripts/ifcfg-{adapter}
 ```
 TYPE=Ethernet  
@@ -34,17 +49,4 @@ ZONE=FedoraServer
 ~  
 ~  
 ~    
-```
-ifconfig --> depreciated  
-An easy way to see what processes own which network connections:  
-```
-sudo netstat -tup  
-```
-for connections and  
-```
-sudo netstat -tupl  
-```
-for listening process  
-```
-sudo netstat -tulpen
 ```
