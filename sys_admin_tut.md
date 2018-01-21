@@ -11,7 +11,7 @@ dmsg | tail --> list last four, useful when plugging in USB drives
 ### admin/permissions  
 sudo vim /etc/bash.bashrc  
 ### network  
-vim /etc/sysconfig/network-scripts/ifcfg-<adapter>
+vim /etc/sysconfig/network-scripts/ifcfg-{adapter}
 ```
 TYPE=Ethernet  
 PROXY_METHOD=none  
