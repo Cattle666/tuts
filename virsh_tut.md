@@ -26,8 +26,10 @@ list
 	--title | show domain title  
 ##### --Make changes--
 virsh edit {guest_name}  
+'''xml
     <graphics type='spice' port='5900' autoport='no' listen='0.0.0.0'>  
       <listen type='address' address='0.0.0.0'/>  
+'''
 ##### --Start and stop domain  
 virsh destroy {guest_name}  
 virsh start {guest_name}  
