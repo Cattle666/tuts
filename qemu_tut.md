@@ -8,7 +8,8 @@ usage: virt-install --name NAME --ram RAM STORAGE INSTALL [options]
 --ram --> How much ram to be used (mb)  
 --disk --> Location of file system to be used by VM  
 --graphics --> TYPE,opt1=arg1,opt2=arg2,...  
---video & --channel --> used for spice compatibility  
+--video --> Configure guest video hardware
+--channel --> Configure a guest communication channel  
 --cdrom -->  File or device to use a virtual CD-ROM device  
 --vcpus --> Number of virtual processors to configure for the guest  
 ##### Examples:  
