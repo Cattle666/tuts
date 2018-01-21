@@ -9,6 +9,7 @@ sudo pvcreate /dev/sdb1
 sudo vgcreate t610 /dev/sdb1  
 ```
 ##### Create logical volume  
+```bash
 sudo lvcreate -n solusvm -L 20G t610  
 ```
 ##### Make file system on logical volume  
@@ -34,12 +35,16 @@ sudo pvs
 sudo vgs  
 ```
 ##### List all logical volumes  
+```bash
 sudo lvs  
 sudo lvscan  
+```
 ##### Resize Logical volume  
 ```bash
 sudo lvresize -L+20G /dev/t610/solusvm  
 ```
 ##### Delete a logical volume  
+```bash
 sudo umount /dev/t610/solusvm  
 sudo lvremove /dev/t610/solusvm   
+```
