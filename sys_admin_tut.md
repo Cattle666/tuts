@@ -1,3 +1,5 @@
+### version  
+cat /etc/lsb-release  
 ### ram  
 sudo dmidecode -t memory  
 free -g  
