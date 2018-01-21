@@ -12,7 +12,7 @@ usage: virt-install --name NAME --ram RAM STORAGE INSTALL [options]
 --cdrom -->  File or device to use a virtual CD-ROM device  
 --vcpus --> Number of virtual processors to configure for the guest  
 ##### Examples:  
-```
+```bash
 sudo virt-install --connect qemu:///system --virt-type kvm --os-type=linux --name mediavm --ram 4096 --disk path=/dev/bubble_raid5_vg/media --graphics spice --video qxl --channel spicevmc --cdrom /home/miles/ubuntu-16.04.2-server-amd64.iso --vcpus 4  
 ```
 sudo virt-install --connect qemu:///system --virt-type kvm \  
@@ -21,12 +21,12 @@ sudo virt-install --connect qemu:///system --virt-type kvm \
 --cdrom /path/to/dir/ubuntu-16.04.2-server-amd64.iso --vcpus 4  
 ##### --Add a disk--  
 cd /place/for/img  
-```
+```bash
 qemu-img create -f raw example-vm-swap.img 1G
 virsh attach-disk example-vm --source /place/for/img/example-vm-swap.img --target vdb --persistent  
 ```
 mount vm side  
-```
+```bash
 cfdisk /dev/sdb  
 mkfs.xfs -f /dev/sdb1  
 ```
