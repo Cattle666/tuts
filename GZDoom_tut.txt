@@ -1,1 +1,6 @@
-Slope - 181
+### --Slopes--  
+###### line def  
+181 Plain Align (slope)  
+### --3D Floors--  
+###### line def  
+160 Sector Set 3D Floor  

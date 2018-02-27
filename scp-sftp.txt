@@ -1,2 +1,14 @@
--HOW TO RECUSIVELY TRANSFER FILES USING SCP (SFTP)-
-scp -r miles@192.168.0.99:/mnt/nfs-share ~/Documents
+# -HOW TO RECUSIVELY TRANSFER FILES USING SCP (SFTP)-  
+### sftp  
+usage: sftp user@address  
+sftp>  command  
+	-pwd --> print working remote directory   
+	-lpwd --> print working local directory  
+	-ls --> lists contents of remote directory  
+	-lls --> lists contents of local directory  
+	-cd --> change remote directory  
+	-lcd --> change local directory  
+	
+### scp  
+scp -r user@192.168.0.2:/mnt/nfs-share ~/Documents  
+scp -r /path/to/dir user@192.168.0.2:/some/remote/directory  
